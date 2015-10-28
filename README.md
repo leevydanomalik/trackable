@@ -9,11 +9,12 @@ SomeBean someBean = new SomeBean()
 
 Trackable.track(someBean);
 
-// make some change
+// make a change
 someBean.setProperty("bar");
 
 Trackable.hasChanges(); => true
 Trackable.diff().getOldValue("someProperty") => "foo"
+Trackable.diff().getNewValue("someProperty") => "bar"
 
 ```
 
