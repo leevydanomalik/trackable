@@ -13,6 +13,8 @@ Trackable.track(someBean);
 someBean.setProperty("bar");
 
 Trackable.hasChanges(); => true
+Trackable.diff().getChangedFields() => ["someProperty"]
+
 Trackable.diff().getOldValue("someProperty") => "foo"
 Trackable.diff().getNewValue("someProperty") => "bar"
 
