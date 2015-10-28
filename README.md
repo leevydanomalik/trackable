@@ -1,7 +1,7 @@
 # Trackable
 Java utility for tracking changes to a bean.
 
-## Basic usage:
+## Basic usage
 To start recording changes to a bean, simply call `Trackable::track`
 ```java
 SomeBean someBean = new SomeBean()
