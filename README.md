@@ -17,10 +17,10 @@ Trackable.diff().getChangedFields() => ["someProperty"]
 
 Trackable.diff().getOldValue("someProperty") => "foo"
 Trackable.diff().getNewValue("someProperty") => "bar"
-```java
+```
 
 To include or exclude certain fields, use `Trackable::watching` and `Trackable::ignoring` respectively
-```
+```java
 Trackable.track(someBean).watching("someProperty");
 Trackable.track(someBean).ignoring("someProperty");
 ```
