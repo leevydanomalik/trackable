@@ -2,7 +2,7 @@
 Java utility for tracking changes to a bean.
 
 ## Basic usage:
-To start tracking changes to your bean, simply call `Trackable::track`
+To start recording changes to a bean, simply call `Trackable::track`
 ```
 SomeBean someBean = new SomeBean()
     .setProperty("foo");
@@ -17,7 +17,6 @@ Trackable.diff().getChangedFields() => ["someProperty"]
 
 Trackable.diff().getOldValue("someProperty") => "foo"
 Trackable.diff().getNewValue("someProperty") => "bar"
-
 ```
 
 To include or exclude certain fields, use `Trackable::watching` and `Trackable::ignoring` respectively
