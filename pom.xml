@@ -9,8 +9,35 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>trackable</name>
-    <url>http://maven.apache.org</url>
+    <name>${project.groupId}:${project.artifactId}</name>
+    <description>Track changes to a bean</description>
+
+    <developers>
+        <developer>
+            <id>mwedgwood</id>
+            <name>Matthew Wedgwood</name>
+            <email>mwedgwood@gmail.com</email>
+        </developer>
+    </developers>
+
+    <licenses>
+        <license>
+            <name>The Apache Software License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <scm>
+        <connection>scm:git:git@github.com:mwedgwood/trackable.git</connection>
+        <developerConnection>scm:git:git@github.com:mwedgwood/trackable.git</developerConnection>
+        <url>https://github.com/mwedgwood/trackable</url>
+    </scm>
+
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/mwedgwood/trackable/issues</url>
+    </issueManagement>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
