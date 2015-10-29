@@ -12,6 +12,12 @@
     <name>${project.groupId}:${project.artifactId}</name>
     <description>Track changes to a bean</description>
 
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
+
     <developers>
         <developer>
             <id>mwedgwood</id>
@@ -29,7 +35,7 @@
     </licenses>
 
     <scm>
-        <connection>scm:git:git@github.com:mwedgwood/trackable.git</connection>
+        <connection>scm:git:https://github.com/mwedgwood/trackable.git</connection>
         <developerConnection>scm:git:git@github.com:mwedgwood/trackable.git</developerConnection>
         <url>https://github.com/mwedgwood/trackable</url>
     </scm>
