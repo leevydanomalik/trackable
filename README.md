@@ -1,4 +1,3 @@
-# Trackable
 Java utility for tracking changes to a bean.
 
 ## Basic usage
