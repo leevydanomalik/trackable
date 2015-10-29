@@ -11,10 +11,11 @@ import java.util.Set;
 public class TrackableImpl<T extends Cloneable> implements Trackable<T>, Serializable {
 
     private final T model;
+    private final T snapshot;
+
     private final Set<String> watchedFields = new HashSet<>();
     private final Set<String> ignoredFields = new HashSet<>();
 
-    private T snapshot = null;
 
     public TrackableImpl(T model) {
         this.model = model;
@@ -23,9 +24,6 @@ public class TrackableImpl<T extends Cloneable> implements Trackable<T>, Seriali
 
     @Override
     public BeanDiff<T> diff() {
-        if (snapshot == null) {
-            throw new RuntimeException("Trackable was never initialized -- cannot compute diff");
-        }
         return new BeanDiff<>(snapshot, model, watchedFields, ignoredFields);
     }
 
