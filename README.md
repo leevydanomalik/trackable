@@ -1,5 +1,3 @@
-Java utility for tracking changes to a bean.
-
 ## Basic usage
 To start recording changes to a bean, simply call `Trackable::track`
 ```java
